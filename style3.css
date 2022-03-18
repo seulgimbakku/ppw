@@ -1,0 +1,114 @@
+body {
+    background-color:#EDF2F8 ;
+    display: flex;
+    flex-flow : column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.flex {
+    background: white;
+    display: grid;
+    grid-gap: 15px;
+    border-radius: 10px;
+    box-shadow: 10px;
+}
+
+.img{
+    background-image: url(https://github.com/lynnecodes/FM-articlepreviewcomponent/blob/master/images/drawers.jpg?raw=true);
+    background-size: cover;
+    height: 100%;
+}
+
+.main {
+    font-family: 'Manrope', sans-serif;
+    padding: 20px;
+    font-size: 13px;
+    color: hsl(214, 17%, 51%);
+    font-weight: 500;
+}
+
+.main h2{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+    font-size: large;
+    word-spacing: 1px;
+    line-height: 25px;
+}
+
+.main article{
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+.penulis {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-gap: 10px;
+}
+
+.nama p{
+    color: hsl(217, 19%, 35%);
+    font-weight: bold;
+    font-weight: 700;
+    margin: 0px;
+    padding-top: 25px;
+    font-size: 13px;
+}
+
+.nama article {
+    margin: 0px;
+}
+
+.avatar img {
+    border-radius: 100%;
+    width: 40px;
+    margin-top: 20px;
+}
+
+
+.ling {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: hsl(210, 46%, 95%);
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.share-icon {
+    margin-top: 0px;
+    transform: translateY(8px) translateX(8px);
+}
+
+
+@media all and (min-width: 374px) {
+    .flex{
+    grid-template-rows: 40% 1fr;
+    grid-row-gap: 10px;
+    width: 340px;
+    height: 550px;
+    }
+    .img {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    }
+}
+
+@media all and (min-width: 1440px){
+    .flex{
+    grid-template-rows: none;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 20px;
+    width: 680px;
+    height: auto;
+    }
+    .img {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 10px;
+    }
+}
